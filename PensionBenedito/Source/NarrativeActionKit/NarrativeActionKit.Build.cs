@@ -1,8 +1,11 @@
-﻿using UnrealBuildTool;
+// Copyright NarrativeActionKit, 2024. All rights reserved.
+// Reusable framework for narrative action games (adventure, horror, mystery)
 
-public class PensionBenedito : ModuleRules
+using UnrealBuildTool;
+
+public class NarrativeActionKit : ModuleRules
 {
-    public $ProjectName(ReadOnlyTargetRules Target) : base(Target)
+    public NarrativeActionKit(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -17,7 +20,7 @@ public class PensionBenedito : ModuleRules
             "GameplayTasks",
             "UMG",
             "NavigationSystem",
-            "NarrativeActionKit"
+            "AIModule"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[]

@@ -1,0 +1,32 @@
+﻿{
+    "FileVersion": 3,
+    "EngineAssociation": "4.27",
+    "Category": "Game",
+    "Description": "Horror mystery game set in 1930s Spain",
+    "Modules": [
+        {
+            "Name": "PensionBenedito",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        },
+        {
+            "Name": "NarrativeActionKit",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "GameplayAbilities",
+            "Enabled": true
+        },
+        {
+            "Name": "GameplayTags",
+            "Enabled": true
+        },
+        {
+            "Name": "GameplayTasks",
+            "Enabled": true
+        }
+    ]
+}
