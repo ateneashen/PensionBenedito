@@ -1,0 +1,48 @@
+{
+  "model": {
+    "name": "Qwen 3.8 27B",
+    "type": "GGUF",
+    "framework": "llama.cpp",
+    "endpoint": "http://localhost:8080",
+    "api_key": "local",
+    "parameters": "27B"
+  },
+  "project_context": {
+    "engine": "Unreal Engine 4.27.2",
+    "language": "C++",
+    "blueprint_support": true,
+    "key_features": [
+      "Gameplay Framework",
+      "ActorComponents",
+      "GAS (GameplayAbilitySystem)",
+      "Chaos Physics",
+      "Blueprint Nativization (deprecated)"
+    ]
+  },
+  "test_categories": [
+    {
+      "id": "boilerplate",
+      "name": "Boilerplate Generation",
+      "risk_level": "low",
+      "description": "Generate base classes, components, interfaces with correct UE4.27 conventions"
+    },
+    {
+      "id": "refactor",
+      "name": "Code Refactoring",
+      "risk_level": "medium",
+      "description": "Analyze and improve existing code patterns"
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation",
+      "risk_level": "low",
+      "description": "Generate comments, docstrings, and changelogs"
+    },
+    {
+      "id": "complex_logic",
+      "name": "Complex Gameplay Logic",
+      "risk_level": "high",
+      "description": "GameMode, replication, async loading - requires supervision"
+    }
+  ]
+}

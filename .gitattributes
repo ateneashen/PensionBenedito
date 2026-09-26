@@ -1,0 +1,115 @@
+# =============================================================================
+# .gitattributes para proyectos Unreal Engine 4.27
+# =============================================================================
+# Este archivo configura cómo Git maneja diferentes tipos de archivos
+# Última actualización: 2026-09-26
+# =============================================================================
+# ===========================
+# ARCHIVOS DE UNREAL ENGINE
+# ===========================
+# Archivos de assets (binarios grandes) - usar Git LFS
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+# Archivos de texto de Unreal
+*.uproject text eol=lf
+*.uplugin text eol=lf
+# ===========================
+# ARCHIVOS DE C++ Y C#
+# ===========================
+# Archivos de código fuente
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.c text eol=lf
+*.cs text eol=lf
+*.inl text eol=lf
+# Archivos de proyecto Visual Studio
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+*.vcxproj.user text eol=crlf
+# ===========================
+# ARCHIVOS DE CONFIGURACIÓN
+# ===========================
+# Configuración de Unreal
+*.ini text eol=lf
+*.cfg text eol=lf
+# Archivos de configuración del proyecto
+*.json text eol=lf
+*.xml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+# ===========================
+# ARCHIVOS DE DOCUMENTACIÓN
+# ===========================
+# Documentación
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+# ===========================
+# ARCHIVOS DE SCRIPTS
+# ===========================
+# Scripts de PowerShell
+*.ps1 text eol=crlf
+# Scripts de Bash
+*.sh text eol=lf
+# Scripts de Python
+*.py text eol=lf
+# Scripts de batch
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# ===========================
+# ARCHIVOS DE IMÁGENES
+# ===========================
+# Imágenes (binarias)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tga binary
+*.psd binary
+*.ai binary
+# ===========================
+# ARCHIVOS DE AUDIO
+# ===========================
+# Audio (binarios)
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.flac binary
+# ===========================
+# ARCHIVOS DE VIDEO
+# ===========================
+# Video (binarios)
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wmv binary
+# ===========================
+# ARCHIVOS COMPRIMIDOS
+# ===========================
+# Archivos comprimidos (binarios)
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar.gz binary
+# ===========================
+# ARCHIVOS DE FONT
+# ===========================
+# Fonts (binarios)
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+# ===========================
+# OTROS
+# ===========================
+# Archivos de shader
+*.usf text eol=lf
+*.ush text eol=lf
+# Archivos de Blueprint (texto)
+*.bp text eol=lf
+# Archivos de DataTable
+*.csv text eol=lf
+*.tsv text eol=lf

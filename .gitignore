@@ -1,0 +1,110 @@
+# =============================================================================
+# .gitignore para proyectos Unreal Engine 4.27
+# =============================================================================
+# Este archivo le dice a Git qué archivos NO debe rastrear
+# Última actualización: 2026-09-26
+# =============================================================================
+
+# ===========================
+# CARPETAS DE UNREAL ENGINE
+# ===========================
+
+# Binaries compilados (se generan automáticamente)
+Binaries/
+Intermediate/
+
+# Cache del editor (se regenera automáticamente)
+DerivedDataCache/
+
+# Configuración local del editor
+Saved/
+
+# Build de Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# ===========================
+# CARPETAS DE SISTEMA
+# ===========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+._*
+
+# Linux
+*~
+.directory
+
+# ===========================
+# ARCHIVOS TEMPORALES
+# ===========================
+
+# Temporales de Unreal
+*.tmp
+*.temp
+
+# Logs
+*.log
+Logs/
+
+# Crash reports
+CrashReportClient/
+
+# ===========================
+# ARCHIVOS GRANDES (LFS)
+# ===========================
+
+# Estos archivos se manejan con Git LFS
+# No los ignoramos, pero los rastreamos especialmente
+*.uasset
+*.umap
+
+# ===========================
+# CARPETAS DEL PROYECTO
+# ===========================
+
+# Research (opcional - si no quieres subir investigación)
+# Research/
+
+# LocalLLM TestBench (opcional)
+# LocalLLM-TestBench/
+
+# Backups locales
+*.bak
+*.backup
+Backups/
+
+# ===========================
+# ARCHIVOS DE IDE
+# ===========================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (Rider, CLion)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ===========================
+# ARCHIVOS DE CONTRASEÑAS
+# ===========================
+
+# NUNCA subir archivos con contraseñas
+*.pem
+*.key
+*.crt
+.env
+.env.local
